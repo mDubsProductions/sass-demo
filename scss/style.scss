@@ -5,17 +5,16 @@ Highlight:  #C2CF52
 */
 
 //Sass variables
-$background: purple;
+$background: saturate(#D6ACA2, 30%);
 $basefont: "Comic Sans MS", san-serif;
-$accent: #C2CF00;
-$base: #F00;
+$accent: darken(#C2CF00, 20%);
+$base: complement(#F00);
 
 //mixing
 @mixin rounded($radius: 7px){
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
-  border-radius: 7px;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
   border-radius: $radius;
   behavior: url(PIE.htc);
 }

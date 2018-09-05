@@ -119,7 +119,7 @@ button {
 
 /* videofitness styles */
 body {
-  background-color: purple;
+  background-color: #eaa08e;
   font-family: "Comic Sans MS", san-serif;
   font-size: 80%;
 }
@@ -147,7 +147,7 @@ body {
 header {
   height: 125px;
   background: transparent url(../images/logo.png) no-repeat 0 18px;
-  border-bottom: 2px solid #C2CF00;
+  border-bottom: 2px solid #626900;
   position: relative;
   margin-bottom: 25px;
 }
@@ -167,7 +167,6 @@ header input {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
-  border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
   -moz-border-radius: 7px;
@@ -235,7 +234,7 @@ nav ul li a {
   position: relative;
   width: 112px;
   float: left;
-  background-color: #C2CF00;
+  background-color: #626900;
   margin-right: 5px;
   text-align: center;
   color: white;
@@ -243,11 +242,10 @@ nav ul li a {
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  border-radius: 7px;
   behavior: url(PIE.htc);
 }
 nav ul li a:hover {
-  background-color: #F00;
+  background-color: aqua;
 }
 nav ul.account {
   float: none;
@@ -378,7 +376,6 @@ img {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
-  border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
 }
