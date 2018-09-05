@@ -12,8 +12,20 @@ $base: #F00;
 
 //mixing
 @mixin rounded($radius: 7px){
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
   border-radius: $radius;
   behavior: url(PIE.htc);
+}
+
+//Extend
+.transition{
+  -moz-transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
 }
 
 /* CSS Reset */
@@ -184,15 +196,8 @@ nav {
     margin-right: 5px;
     text-align: center;
     color: white;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
     @include rounded;
-    -moz-transition: background-color .3s ease-in;
-    -webkit-transition: background-color .3s ease-in;
-    -o-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
+    @extend .transition;
   }
   ul li a:hover {
     background-color: $base;
@@ -224,10 +229,7 @@ nav {
   font-weight: bold;
   padding: 10px;
   color: white;
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  @extend .transition;
 }
 .new a:hover span.overlay {
   opacity: 1;
@@ -332,10 +334,7 @@ img { float: left; }
   -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
   behavior: url(PIE.htc);
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  @extend .transition;
 }
 #player_nav li.detail a { background-position: 0 -43px; }
 #player_nav li.video a { background-position: 0 -129px; }

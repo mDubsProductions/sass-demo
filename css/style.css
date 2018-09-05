@@ -3,6 +3,13 @@ Colors:
 Background: #4E4F48
 Highlight:  #C2CF52
 */
+.transition, #player_nav li a, .new span.overlay, nav ul li a {
+  -moz-transition: background-color 0.3s ease-in;
+  -webkit-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
 /* CSS Reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, em, img, small, strong, sub, sup, var,
@@ -157,6 +164,10 @@ header input {
   height: 16px;
   width: 150px;
   border: 2px solid #4E4F48;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
   -moz-border-radius: 7px;
@@ -234,10 +245,6 @@ nav ul li a {
   border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
-  -moz-transition: background-color 0.3s ease-in;
-  -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
-  transition: background-color 0.3s ease-in;
 }
 nav ul li a:hover {
   background-color: #F00;
@@ -284,10 +291,6 @@ nav ul.account {
   font-weight: bold;
   padding: 10px;
   color: white;
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
 }
 
 .new a:hover span.overlay {
@@ -372,6 +375,10 @@ img {
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
 }
@@ -433,10 +440,6 @@ img {
   -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
   behavior: url(PIE.htc);
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
 }
 
 #player_nav li.detail a {
