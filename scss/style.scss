@@ -8,7 +8,7 @@ Highlight:  #C2CF52
 $background: saturate(#D6ACA2, 30%);
 $basefont: "Comic Sans MS", san-serif;
 $accent: darken(#C2CF00, 20%);
-$base: complement(#F00);
+$base: complement(blue);
 
 //mixing
 @mixin rounded($radius: 7px){
